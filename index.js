@@ -1,12 +1,9 @@
 $(document).ready(() => {
 
-    $('.header-li.one').on('click', () => {
-        $('.food-menu').toggleClass('hide')
-    });
+   $('.header-li.one').on('click', () => {
+  $('.food-menu').fadeToggle(330).toggleClass('hide');
+});
 
-    $('.header-li.one').on('click', () => {
-        $('.food-menu').fadeToggle(330)
-        })
         
 
 
