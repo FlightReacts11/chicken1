@@ -4,10 +4,25 @@ $(document).ready(() => {
   $('.food-menu').fadeToggle(330).toggleClass('hide');
 });
 
-        
+})
 
+$(document).ready(() => {
+
+   $('.burger').on('click', () => {
+  $('.burger-container').slideToggle(350).toggleClass('hide');
+});
 
 })
+
+
+$(document).ready(() => {
+  $('.burger-li.one').on('click', () => {
+    $('.food-menu').fadeToggle(330).toggleClass('hide')
+  })
+});
+
+
+
 
 
 $(document).ready(function() {

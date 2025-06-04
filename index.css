@@ -22,7 +22,7 @@
   }
   
   header {
-    background-color: hsla(30 100% 50% / 0.5);
+    background-color: #C83E4D
   }
 
   li {
@@ -47,6 +47,7 @@
   cursor: pointer;
   text-decoration: underline;
   white-space: nowrap;
+  color: #F4B860;
 }
 
 .header-li a {
@@ -72,20 +73,30 @@
   height: 10vh;
 }
 
+.burger-container {
+  background-color:#C83E4D
+}
+
 .burger-h1, .burger-li {
   text-align: center;
 }
 
 .burger-h1 {
-  padding-top: 7%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #32373B;
 }
 
 .burger-li {
-  padding-top: 10%;
+  margin-top: 15vh;
   font-size: 22px;
   text-decoration: underline;
+  color: #F4B860;
 }
 
+.burger-li.bottom {
+  padding-bottom: 10vh;
+}
 
 
 /*Hidden Menu*/
@@ -294,15 +305,15 @@ h1 {
 }
 
 main {
-  background-color: lightyellow;
+  background-color: #32373B;
 }
 
 section {
-  background-color: lightblue;
+  background-color: #4A5859;
 }
 
 .text-overlay {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 3%;
   transform: translateY(-55%);
@@ -507,5 +518,12 @@ background-color: #f7f2ed;
 
   .burger-li {
     
+  }
+}
+
+@media(max-width: 1050px) {
+  .menu-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   }
 }
