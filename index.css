@@ -55,10 +55,17 @@
   color: inherit;
 }
 
+.right-section {
+  display: flex;
+  position: relative;
+  left: 1.5vw;
+}
+
 .cart-container {
   height: 10vh;
   display: flex;
   align-items: center;
+  
 }
 
 .cart {
@@ -74,7 +81,8 @@
 }
 
 .burger-container {
-  background-color:#C83E4D
+  background-color:#C83E4D;
+  display: none;
 }
 
 .burger-h1, .burger-li {
@@ -101,8 +109,8 @@
 
 /*Hidden Menu*/
 
-.food-menu.hide {
-  display: none
+.food-menu {
+ 
 }
 
 .hidden-h3 {
@@ -287,25 +295,30 @@ h3 {
   padding-bottom: 72px;
 }
 
-.banner-div .banner-img {
-  width: 100%;
-  display: block;
-}
-
 .banner-img {
   border-radius: 15px;
 }
 
-h1 {
-  padding-left: 25px;
-  color: orange;
-  line-height: 53px;
+.banner-h1 {
+  margin-top: 380px;
+  color: #F4B860;
+  line-height: 60px;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 34px;
+  position: relative;
+  right: 70px;
+  background-color: hsla(10 99.8% 0% / 0.7);
+  border-radius: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 main {
-  background-color: #32373B;
+  background-image: url('images/markus-winkler-UoPGcGEBEUU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 52vh;
+
 }
 
 section {
@@ -328,6 +341,7 @@ section {
   padding: 10% 5% 10% 10%;
   margin-left: 7%;
   margin-right: 7%;
+  margin-bottom: 22%;
   background-color: hsl(86 100% 46%);
   border-radius: 10px;
   position: relative;
@@ -339,20 +353,70 @@ section {
   line-height: 2.1rem;
 }
 
+/*Customer review cards*/
+
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 100px;
+  justify-content: center;
+  text-align: center;
+  align-items: start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-feedback.one {
+  background-color:#32373B;
+}
+
+.top-feedback.two {
+  background-color:#32373B
+}
+
+.top-image {
+  height: 150px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.top-image.one {
+  width: 150px;
+}
+
+.main-feedback {
+  line-height: 36px;
+}
+
+.paragraph-text {
+  line-height: 28px;
+}
+
+
 /*Slideshow home page*/
 
 .slide-show-h2 {
   color: orange;
   text-align: center;
-  margin-top: 200px;
+  margin-bottom: 4vh
 }
 
 .slideshow {
-  margin-top: 8vh;
+  margin-top: 16vh;
   border: 3px solid;
   position: relative;
   padding-bottom: 7%;
   padding-top: 7%;
+  background-color: #32373B;
 }
 
 .slide-img {
@@ -370,7 +434,7 @@ section {
 }
 
 .slide-text {
-  margin-right: 43%;
+  margin-right: 42%;
 }
 
 .java-arrow-left, .java-arrow-right {
@@ -387,6 +451,10 @@ section {
 .java-arrow-right {
   right: 0;
   padding-top: 20px;
+}
+
+.slide-text {
+  color:#F4B860
 }
 
 /*End of slideshow*/
@@ -507,7 +575,7 @@ background-color: #f7f2ed;
 
 
 
-@media(min-width: 650px) {
+@media (min-width: 650px) {
   .burger {
     display: none;
   }
@@ -516,10 +584,11 @@ background-color: #f7f2ed;
     display: none;
   }
 
-  .burger-li {
-    
+  .banner-img {
+    display: none;
   }
 }
+
 
 @media(max-width: 1050px) {
   .menu-container {
