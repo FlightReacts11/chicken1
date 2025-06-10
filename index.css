@@ -93,6 +93,7 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
   background-color: #32373B;
+  color: #F4B860;
 }
 
 .burger-li {
@@ -110,7 +111,7 @@
 /*Hidden Menu*/
 
 .food-menu {
- 
+ display: none;
 }
 
 .hidden-h3 {
@@ -355,6 +356,13 @@ section {
 
 /*Customer review cards*/
 
+.cards-h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+  color:#F4B860
+}
+
 .main-cards {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -364,6 +372,8 @@ section {
   align-items: start;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .top-feedback {
@@ -371,14 +381,23 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 15px;
+  border-radius: 5px;
 }
 
-.top-feedback.one {
+.top-feedback {
   background-color:#32373B;
+}
+.top-feedback.one {
+  padding-bottom: 10px;
 }
 
 .top-feedback.two {
-  background-color:#32373B
+  padding-bottom: 18px;
+}
+
+.top-feedback.three {
+  padding-bottom: 16px;
 }
 
 .top-image {
@@ -395,10 +414,14 @@ section {
 
 .main-feedback {
   line-height: 36px;
+  padding-top: 8px;
+  color:#F4B860;
+
 }
 
 .paragraph-text {
   line-height: 28px;
+  color:#F4D6CC
 }
 
 
@@ -485,15 +508,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, auto);
   width: 100%;
-  background:
-      radial-gradient(circle farthest-side at 0% 50%,#f7f2ed 23.5%,#0000 0)33.6px 48px,
-      radial-gradient(circle farthest-side at 0% 50%,#febf00 24%,#0000 0)30.4px 48px,
-      linear-gradient(#f7f2ed 14%,#0000 0, #0000 85%,#f7f2ed 0)0 0,
-      linear-gradient(150deg,#f7f2ed 24%,#febf00 0,#febf00 26%,#0000 0,#0000 74%,#febf00 0,#febf00 76%,#f7f2ed 0)0 0,
-      linear-gradient(30deg,#f7f2ed 24%,#febf00 0,#febf00 26%,#0000 0,#0000 74%,#febf00 0,#febf00 76%,#f7f2ed 0)0 0,
-      linear-gradient(90deg,#febf00 2%,#f7f2ed 0,#f7f2ed 98%,#febf00 0%)0 0 #f7f2ed;
-background-size: 64px 96px;
-background-color: #f7f2ed;
+  background-color:#32373B
 }
 
 .grid-combo-one, .grid-combo-two, 
@@ -503,6 +518,7 @@ background-color: #f7f2ed;
   flex-direction: column;
   align-items: center;
   margin-right: 14%;
+  color:#F4B860
 }
 
 .combo-item-one {
@@ -516,13 +532,29 @@ background-color: #f7f2ed;
 }
 
 .combo-item-three {
-  width: 48vw;
-  height: 33.5vh
+  width: 30vw;
+  height: auto;
 }
 
 .combo-item-four {
   width: 30vw;
   height: auto;
+}
+
+.order-button {
+  border-radius: 5px;
+  padding: 10px;
+  color: #C83E4D;
+  font-size: 16px;
+  cursor: pointer;
+   border: 2px solid #32373B;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.order-button:hover {
+  background: linear-gradient(to right, #C83E4E, orange);
+  color: #F4D6CC;
+  cursor: pointer;
 }
 
 /*End of Chicken Combo*/

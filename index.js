@@ -10,6 +10,7 @@ $(document).ready(() => {
 
    $('.burger').on('click', () => {
   $('.burger-container').slideToggle(350).toggleClass('hide');
+  
 });
 
 })
