@@ -298,6 +298,7 @@ h3 {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 72px;
+  align-items: center;
 }
 
 .banner-img {
@@ -305,7 +306,6 @@ h3 {
 }
 
 .banner-h1 {
-  margin-top: 380px;
   color: #F4B860;
   line-height: 60px;
   letter-spacing: 1px;
@@ -336,9 +336,8 @@ section {
 
 .text-overlay {
   position: absolute;
-  top: 50%;
   left: 3%;
-  transform: translateY(-55%);
+  top: 100%;
   color: orange;
   font-size: 4vw;
   font-weight: bold;
