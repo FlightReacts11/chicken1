@@ -13,28 +13,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-div">
+    <header class="site-header">
+        <div class="logo">
             <img class="logo-img" src="https://img.freepik.com/premium-vector/fried-chicken-logo-badge-design_527939-1153.jpg?w=826" alt="chicken">
-
-       <ul class="header-nav">
-      <li class="header-li one">Menu</li>
-      <nav>
+            </div>
+              <nav class="nav-menu"></nav>
+       <ul class="nav-links">
+        <li class="header-li">Home</li>
+      <li class="header-li">Menu</li>
       <li class="header-li"> <a href="#contact">Contact Us</li></a>
-      </nav>
       <li class="header-li"><a href="index.login.html">Login</a></li>
     </ul>
-
-    <div class="right-section">
-    <div class="cart-container">
-      <img class="cart" src="https://th.bing.com/th/id/OIP.ixAh1YGKV3LeQy6gzGe7ZQHaHa?rs=1&pid=ImgDetMain" alt="shopping cart">
-    </div>
-    <div>
-          <li class="header-li"><img class="burger" src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-18.jpg"></li>
-          
-    </div>
-  </div>
-  </div>
+    <button class="burger" id="burger" aria-label="Menu"></button>
+    </nav>
 </header>
 
 <!--Java burger menu-->
@@ -45,7 +36,7 @@
 <nav>
 <li class="burger-li"><a href="#contact">Contact Us</li></a>
 </nav>
-<a href="index.login.html">
+<a href="login.html">
 <li class="burger-li">Login</li></a>
 <li class="burger-li bottom">Checkout</li>
 </ul>
@@ -54,94 +45,59 @@
 
     <!--Menu-->
     
-    <div class="food-menu hide">
+  <div class="food-menu hide">
+  <h3 class="hidden-h3">Make a selection</h3>
+  <div class="menu-container">
+    <a href="combo.html" class="menu-card">
+      <img class="menu-img" src="https://th.bing.com/th/id/OIP.crCoyeHB7Udhq7cBKyCgogAAAA?rs=1&pid=ImgDetMain">
+      <h3>Combo Meals</h3>
+    </a>
 
-        <h3 class="hidden-h3">Make a selection</h3>
-        <div class="menu-container">
-    
-          <a href="indexcombo.html">
-            <div class="grid-item-one">
-                <img class="combo-img" src="https://th.bing.com/th/id/OIP.crCoyeHB7Udhq7cBKyCgogAAAA?rs=1&pid=ImgDetMain">
-                  <div class="food-box">
-                <h3>Combo Meals</h3>
-                </div>
-            </div>
-            </a>
+    <a href="fried-chicken.html" class="menu-card">
+      <img class="menu-img" src="images/nizar-zulmi-UgckYUoc0tM-unsplash-removebg-preview (1).png">
+      <h3>Fried Chicken</h3>
+    </a>
 
-            <a href="indexfried-chicken.html">
-            <div class="grid-item-two">
-                <img class="chicken-img" src="https://th.bing.com/th/id/OIP.gYqdqhed33w4RZLCbIH94AHaHa?rs=1&pid=ImgDetMain">
-                <div class="food-box">
-                <h3>Fried Chicken</h3>
-                </div>
-            </div>
-        </a>
+    <a href="potpies.html" class="menu-card">
+      <img class="menu-img" src="https://media.istockphoto.com/id/1217263701/photo/open-chicken-pot-pie.webp?b=1&s=170667a&w=0&k=20&c=qmfzrUgtpGjPDP8LtfNgLYDpJf3TUNWbCzfZQhAzqFM=">
+      <h3>Chicken Pot Pies</h3>
+    </a>
 
-            <a href="index.potpies.html">
-            <div class="grid-item-three">
-                <img class="pie-img" src="https://media.istockphoto.com/id/1217263701/photo/open-chicken-pot-pie.webp?b=1&s=170667a&w=0&k=20&c=qmfzrUgtpGjPDP8LtfNgLYDpJf3TUNWbCzfZQhAzqFM=">
-                  <div class="food-box">
-                <h3>Chicken Pot Pies</h3>
-                </div>
-            </div>
-            </a>
+    <a href="value.html" class="menu-card">
+      <img class="menu-img" src="images/charles-chen-FF94H4xB7V4-unsplash-removebg-preview (1).png">
+      <h3>Value Menu</h3>
+    </a>
 
-            <a href="index.value.html">
-            <div class="grid-item-four">
-                <img class="value-img" src="https://th.bing.com/th/id/OIP.nU8mH7TnWfClt_YXODNdYwHaHa?rs=1&pid=ImgDetMain">
-                 <div class="food-box">
-                <h3>Value Menu</h3>
-                </div>
-            </div>
-            </a>
+    <a href="beverages.html" class="menu-card">
+      <img class="menu-img" src="images/pexels-sachinmittal-18297528-removebg-preview (1).png">
+      <h3>Beverages</h3>
+    </a>
 
-            <a href="index.beverages.html">
-           <div class="grid-item-five">
-            <img class="beverage-img" src="https://i5.walmartimages.com/asr/26461fe9-5506-4dea-8683-c711379eef60_1.e41d670fc34edbe90f5adf505de8b4e8.jpeg">
-              <div class="food-box">
-            <h3>Beverages</h3>
-            </div>
-           </div>
-           </a>
+    <a href="desserts.html" class="menu-card">
+      <img class="menu-img" src="images/danil-aksenov-bkXzABDt08Q-unsplash-removebg-preview (1).png">
+      <h3>Desserts</h3>
+    </a>
 
-           <a href="index.desserts.html">
-           <div class="grid-item-six">
-            <img class="dessert-img" src="https://img.freepik.com/premium-photo/chocolate-chip-cookie-white-background_855892-6226.jpg?w=2000">
-            <div class="food-box">
-            <h3>Desserts</h3>
-            </div>
-           </div>
-           </a>
+    <a href="kidsmenu.html" class="menu-card">
+      <img class="menu-img" src="images/logan-jeffrey-Dr3vO9qZs6Y-unsplash-removebg-preview (1).png">
+      <h3>Kids Menu</h3>
+    </a>
 
-           <a href="index.kidsmenu.html">
-           <div class="grid-item-seven">
-            <img class="kids-img" src="https://digitaleat.kfc.com/menus/image/bare/kfc-KidsMealNuggetpromoPDP?q=75">
-            <div class="food-box">
-            <h3>Kids Menu</h3>
-            </div>
-           </div>
-           </a>
+    <a href="sides.html" class="menu-card">
+      <img class="menu-img" src="images/fernanda-martinez-h-S2RyyYthQ-unsplash-removebg-preview (1).png">
+      <h3>Sides</h3>
+    </a>
+  </div>
+</div>
 
-           <a href="index.sides.html">
-           <div class="grid-item-eight">
-            <img class="sides-img" src="https://img.freepik.com/premium-photo/mashed-potatoes-isolated-plain-white-background_146508-7025.jpg?w=2000">
-            <div class="food-box">
-            <h3>Sides</h3>
-            </div>
-           </div>
-           </a>
-
-        </div>
-    </div>
     <!--End of hidden menu-->
 
 
     <!--Banner-->
     <section>
-    <main>
-        <div class="banner-div">
-                <div class="text-overlay">
-            <h1 class="banner-h1"><span>Welcome to Gabe's Chicken</span> <span>our crispy chicken will</span> <span>blow your mind</span>
+    <main class="hero">
+        <div class="hero-text">
+            <h1><span>Welcome to Gabe's Chicken</span> <span>our crispy chicken will</span> <span>blow your mind</span>
             </div>
         </div>
     </main>
@@ -151,8 +107,8 @@
     <!--Main P box-->
 
     <section>
-        <div class="main-p-box">
-            <p class="p-text">Everyone loves fried chicken. We do it the best. For 30 years we have pioneered perfect fried chicken. 
+        <div class="about-section">
+            <p class="about-blurb">Everyone loves fried chicken. We do it the best. For 30 years we have pioneered perfect fried chicken. 
                 What separates us from the rest is our delicious beer badder and unbeatable crunch. 
             </p>
         </div>   
@@ -196,15 +152,18 @@
         <h2 class="slide-show-h2">Check out our weekly deals below </h2>
   <div class="slides">
     <div class="slide active">
-      <img class="slide-img" src="https://uproxx.com/wp-content/uploads/2022/10/kfc-2DTCombo.webp" alt="Slide 1" />
+      <h3 class="slide-text">Fried Chicken Bucket</h3>
+      <img class="slide-img" src="images/yeh-xintong-Cn2fj-HiQok-unsplash-removebg-preview (1).png" alt="Slide 1" />
       <h3 class="slide-text">Only 8.99!</h3>
     </div>
     <div class="slide">
-      <img class="slide-img" src="https://digitaleat.kfc.com/menus/image/bare/kfc-PotPie.webp" alt="Slide 2" />
+      <h3 class="slide-text">5 Piece Variety Mix</h3>
+      <img class="slide-img" src="images/nizar-zulmi-UgckYUoc0tM-unsplash-removebg-preview (1).png" alt="Slide 2" />
        <h3 class="slide-text">Only 8.99!</h3>
     </div>
     <div class="slide">
-      <img class="slide-img" src="https://images.ctfassets.net/crbk84xktnsl/4fJsTeZkZKpNWPjPU0uyKx/b11fb2c944165e674f1c73c08e1be991/Original_Tender_5_Combo.png" alt="Slide 3" />
+      <h3 class="slide-text">Chicken Sandwich Combo</h3>
+      <img class="slide-img" src="images/crunch-So-jSM-B9uI-unsplash__1_-removebg-preview (1).png" alt="Slide 3" />
        <h3 class="slide-text">Only 8.99!</h3>
     </div>
   </div>

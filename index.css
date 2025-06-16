@@ -10,70 +10,43 @@
 
   /*Header*/
 
-  .main-header {
-    box-shadow: 1px 2px 15px 1px;
-  }
-
-  .logo-img {
-    width: 150px;
-    height: auto;
-    position: relative;
-    right: 23px;
-  }
-  
-  header {
-    background-color: #C83E4D
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .header-div {
+ .site-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 2vw;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #F8F8F8;
+    border-bottom: 1px solid #ccc;
+    background-color: #F4F1DE;
   }
-
- .header-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 18vw;
-}
-
-.header-li {
-  cursor: pointer;
-  text-decoration: underline;
-  white-space: nowrap;
-  color: #F4B860;
-}
-
-.header-li a {
-  text-decoration: underline;
-  color: inherit;
-}
-
-.right-section {
-  display: flex;
-  position: relative;
-  left: 1.5vw;
-}
-
-.cart-container {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  
-}
-
-.cart {
-  height: 90px;
-  width: auto;
-  border-radius: 10%;
-
-}
+  .logo img {
+    max-width: 150px;
+  }
+  .nav-menu {
+    position: relative;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Ranchers', sans-serif;
+    color: #2E282A;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #D7263D;
+  }
+  .burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 
 /*Burger Menu*/
 .burger {
@@ -113,90 +86,49 @@
 
 
 /*Hidden Menu*/
-
 .food-menu {
- display: none;
+  display: none;
 }
 
 .hidden-h3 {
   position: relative;
   top: 25px;
-  padding: 3px auto;
-  margin: auto 200px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  text-align: center;
   background-color: orange;
+  width: fit-content;
+  font-size: 1.5rem;
 }
 
 .menu-container {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
-.combo-img {
-  width: 17rem;
-  height: 21.5rem
-}
-
-.chicken-img {
-  width: 17rem;
-  height: 20rem
-}
-
-.pie-img {
-  width: 15rem;
-  height: 100%
-}
-
-.value-img {
-  width: 15rem;
-  height: 19.5rem;
-}
-
-.beverage-img {
-  width: 15rem;
-}
-
-.dessert-img {
-  width: 17rem;
-  height: 15rem;
-}
-
-.kids-img {
-  width: 15rem;
-}
-
-.sides-img {
-  width: 15rem;
-}
-
-.grid-item-five {
-  width: 276px;
-}
-
-.grid-item-one, .grid-item-two, .grid-item-three, .grid-item-four {
-  height: 80%;
-}
-
-
-.grid-item-one, .grid-item-two, .grid-item-three, .grid-item-four, 
-.grid-item-five, .grid-item-six, .grid-item-seven, .grid-item-eight {
-  border: 2px solid;
-  align-items: center;
-  justify-content: center;
+.menu-card {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;
   background-color: white;
-  margin-top: 50px;
+  border: 2px solid;
   text-decoration: underline 3px dotted;
+  padding: 1rem;
   transition: transform 0.3s ease;
-  padding-bottom: 5px
 }
 
-.grid-item-one:hover, .grid-item-two:hover, .grid-item-three:hover, .grid-item-four:hover, 
-.grid-item-five:hover, .grid-item-six:hover, .grid-item-seven:hover, .grid-item-eight:hover {
+.menu-card:hover {
   transform: scale(1.08);
-  cursor: pointer
+  cursor: pointer;
+}
+
+.menu-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 /*End of hidden menu*/
@@ -208,9 +140,7 @@ h3 {
 /*Login*/
 
 .bg-color {
-   background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MDQ3NjQ1/website-background-templates.png');
-   background-repeat: no-repeat;
-   background-size: cover;
+  background-color: black;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -224,7 +154,7 @@ h3 {
 .login-box {
   display: block;
   border: 3px solid;
-  background-color: #32373B;
+  background-color:#32373B;
   padding: 40px;
   border-radius: 10px;
   border-color:#4a5859
@@ -232,13 +162,13 @@ h3 {
 .login-h2 {
   padding-bottom: 40px;
   padding-top: 25px;
+  color:#F4B860;
 }
-.login-h2, .login-h4 {
-  color: #C83E4E;
-}
+
 .login-h4 {
   padding-bottom: 5px;
   text-decoration: underline;
+  color:#F4D6CC
 }
 .login-h4.password {
   position: relative;
@@ -281,7 +211,7 @@ h3 {
 .return-home {
   padding-top: 25px;
   margin-right: 20px;
-  color:#febf00
+  color:#F4B860
 }
 
 /*End of login*/
@@ -289,78 +219,45 @@ h3 {
 
 /*Home page*/
 
-.banner-div {
-  display: flex;
-  justify-content: center;
-  padding-top: 8vh;
-  position: relative;
-  width: 75vw;
-  max-width: 1200px;
-  margin: auto;
-  padding-bottom: 72px;
-}
-
-.banner-img {
-  border-radius: 15px;
-}
-
-.banner-h1 {
-  margin-top: 380px;
-  color: #F4B860;
-  line-height: 60px;
-  letter-spacing: 1px;
-  font-size: 34px;
-  position: relative;
-  right: 70px;
-  background-color: hsla(10 99.8% 0% / 0.7);
-  border-radius: 5px;
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.banner-h1 span {
-  display: block;
-}
-
-main {
+.hero {
   background-image: url('images/markus-winkler-UoPGcGEBEUU-unsplash.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 52vh;
-
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
 section {
   background-color: #4A5859;
 }
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 3%;
-  transform: translateY(-55%);
-  color: orange;
-  font-size: 4vw;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px black;
-}
-
-.main-p-box {
+.about-section {
+  background-color: var(--gold);
+  padding: 4rem 2rem;
   display: flex;
-  padding: 10% 5% 10% 10%;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-bottom: 22%;
-  background-color : #C83E4D;
-  border-radius: 10px;
-  color: #F4B860;
-  position: relative;
-  top: 11vh;
+  justify-content: center;
 }
-
-.p-text {
-  font-size: 20px;
-  line-height: 2.1rem;
+.about-blurb {
+  background-color: var(--brown);
+  color: white;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Customer review cards*/
@@ -465,6 +362,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .java-arrow-left {
@@ -502,7 +400,7 @@ section {
   font-size: 20px;
 }
 
-/*Chicken Combo*/
+/*Grid menu items*/
 
 .combo-menu-container {
   display: grid;
@@ -518,7 +416,14 @@ section {
   flex-direction: column;
   align-items: center;
   margin-right: 14%;
-  color:#F4B860
+  color:#F4B860;
+  justify-content: space-between;
+}
+
+.combo-menu-container img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .combo-item-one {
@@ -651,7 +556,7 @@ section {
 @media (max-width: 400px) {
   .banner-div {
     position: relative;
-    left: 30px;
+    left: 70px;
   }
 
   .banner-h1 {
@@ -674,5 +579,26 @@ section {
 @media (max-width: 1020px) {
   .main-cards {
     grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .combo-menu-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 2rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .about-blurb {
+    font-size: 1.1rem;
+    padding: 1.5rem;
   }
 }
