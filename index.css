@@ -257,7 +257,7 @@ h3 {
 }
 
 section {
-  background-color: #4A5859;
+  background-color: whitesmoke;
 }
 
 .about-section {
@@ -286,18 +286,19 @@ section {
   color:#F4B860
 }
 
+.cards-section {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+}
+
 .main-cards {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  background-color: black;
-  gap: 100px;
+  gap: 30px;
   justify-content: center;
   text-align: center;
   align-items: stretch;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .top-feedback {
@@ -307,11 +308,7 @@ section {
   justify-content: center;
   padding-top: 15px;
   border-radius: 5px;
-}
-
-.top-feedback {
   background-color:#32373B;
-  padding-bottom: 14px;
 }
 
 
@@ -320,7 +317,7 @@ section {
   width: auto;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 50%;
 }
 
 .top-image.one {
@@ -531,6 +528,8 @@ section {
 @media (max-width: 1020px) {
   .main-cards {
     grid-template-columns: auto;
+    width: 700px;
+    margin: auto;
   }
 }
 
