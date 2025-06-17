@@ -1,3 +1,9 @@
+:root {
+  --red: #bb1818;
+  --brown: #733e1b;
+  --gold: #f3aa27;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,17 +25,21 @@
     border-bottom: 1px solid #ccc;
     background-color: #F4F1DE;
   }
+
   .logo img {
-    max-width: 150px;
+    max-width: 170px;
   }
+
   .nav-menu {
     position: relative;
   }
+
   .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
   }
+
   .nav-links a {
     text-decoration: none;
     font-weight: 600;
@@ -37,15 +47,22 @@
     color: #2E282A;
     transition: color 0.3s ease;
   }
+
   .nav-links a:hover {
     color: #D7263D;
   }
+
   .burger {
     display: none;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  .cart-icon {
+    height: 24px;
+    width: auto;
   }
 
 /*Burger Menu*/
@@ -495,76 +512,11 @@ section {
 
 /*End of javascript buttons*/
 
-@media (max-width: 780px) {
-  .header-nav {
-    gap: 9vw
-  }
-}
-
-@media(max-width: 650px) {
-  .header-nav, .cart {
-    display: none;
-  }
-  .burger {
-    cursor: pointer;
-  }
-}
-
-
-
-@media (min-width: 650px) {
-  .burger {
-    display: none;
-  }
-
-  .burger-container {
-    display: none;
-  }
-
-  .banner-img {
-    display: none;
-  }
-}
-
 
 @media (max-width: 650px) {
   .cards-h1 {
     margin-top: 160px;
     font-size: 26px;
-  }
-}
-
-@media (max-width: 700px) {
-
-  .banner-div {
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    
-  }
-
-.banner-h1 {
-   text-align: center;
-   font-size: 28px;
-}
-
-  .banner-h1 span {
-    display: inline;
-  }
-}
-
-@media (max-width: 400px) {
-  .banner-div {
-    position: relative;
-    left: 70px;
-  }
-
-  .banner-h1 {
-    font-size: 22px;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 }
 
@@ -590,6 +542,8 @@ section {
 }
 
 
+
+
 @media (max-width: 480px) {
   .hero-text {
     font-size: 2rem;
@@ -600,5 +554,15 @@ section {
   .about-blurb {
     font-size: 1.1rem;
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
   }
 }
