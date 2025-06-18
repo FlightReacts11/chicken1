@@ -287,7 +287,8 @@ section {
 }
 
 .cards-section {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
   margin: auto;
 }
@@ -307,21 +308,17 @@ section {
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  border-radius: 5px;
+  border-radius: 40px;
   background-color:#32373B;
 }
 
 
 .top-image {
   height: 150px;
-  width: auto;
+  width: 150px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-}
-
-.top-image.one {
-  width: 150px;
 }
 
 .main-feedback {
@@ -338,58 +335,76 @@ section {
 
 /*Slideshow home page*/
 
-.slide-show-h2 {
-  color: orange;
-  text-align: center;
-  margin-bottom: 4vh
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 1rem;
 }
 
-.slideshow {
-  margin-top: 16vh;
-  border: 3px solid;
+/* === Slider Section === */
+.photo-slider {
+  margin: 3rem 0;
+}
+
+.photo-slider .container {
   position: relative;
-  padding-bottom: 7%;
-  padding-top: 7%;
-  background-color: #32373B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
-.slide-img {
-  width: 37vw;
-  height: auto;
+/* Wrapper that hides overflow */
+.slider-window {
+  overflow: hidden;
+  width: 100%;
 }
 
+/* Flex container of all slides */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slides */
 .slide {
-  display: none;
+  flex: 0 0 100%;
 }
 
-.slide.active {
+.slide img {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-left: 32%
+  border-radius: 8px;
 }
 
-.slide-text {
-  margin-right: 42%;
-}
-
-.java-arrow-left, .java-arrow-right {
-  width: 6vw;
+/* Arrows */
+.slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 50%;
   cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
 }
 
-.java-arrow-left {
-  left: 0;
+.slider-btn:hover {
+  background: var(--brown);
 }
 
-.java-arrow-right {
-  right: 0;
-  padding-top: 20px;
+.slider-btn.prev {
+  left: 10px;
 }
 
-.slide-text {
-  color:#F4B860
+.slider-btn.next {
+  right: 10px;
 }
 
 /*End of slideshow*/
@@ -525,11 +540,15 @@ section {
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
   .main-cards {
     grid-template-columns: auto;
-    width: 700px;
+    width: 100%;
     margin: auto;
+  }
+
+  .top-feedback {
+    max-width: 400px;
   }
 }
 
