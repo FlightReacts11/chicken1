@@ -2,6 +2,8 @@
   --red: #bb1818;
   --brown: #733e1b;
   --gold: #f3aa27;
+  --black: #2E282A;
+  --light-beige: #F4F1DE;
 }
 
 * {
@@ -65,13 +67,17 @@
     width: auto;
   }
 
+  a {
+    color: var(--gold);
+  }
+
 /*Burger Menu*/
 .burger {
   height: 10vh;
 }
 
 .burger-container {
-  background-color:#C83E4D;
+  background-color: var(--black);
   display: none;
 }
 
@@ -86,7 +92,7 @@
 .burger-h1 {
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #32373B;
+  background-color: var(--black);
   color: #F4B860;
 }
 
@@ -94,7 +100,8 @@
   margin-top: 15vh;
   font-size: 22px;
   text-decoration: underline;
-  color: #F4B860;
+  color: var(--gold);
+  cursor: pointer;
 }
 
 .burger-li.bottom {
@@ -157,7 +164,7 @@ h3 {
 /*Login*/
 
 .bg-color {
-  background-color: black;
+  background-color: var(--light-beige);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -171,15 +178,15 @@ h3 {
 .login-box {
   display: block;
   border: 3px solid;
-  background-color:#32373B;
+  background-color: var(--black);
   padding: 40px;
   border-radius: 10px;
-  border-color:#4a5859
+  border-color:#4a5859;
 }
 .login-h2 {
   padding-bottom: 40px;
   padding-top: 25px;
-  color:#F4B860;
+  color: var(--red);
 }
 
 .login-h4 {
@@ -228,7 +235,7 @@ h3 {
 .return-home {
   padding-top: 25px;
   margin-right: 20px;
-  color:#F4B860
+  color: var(--red);
 }
 
 /*End of login*/
@@ -257,17 +264,17 @@ h3 {
 }
 
 section {
-  background-color: whitesmoke;
+  background-color: var(--light-beige)
 }
 
 .about-section {
-  background-color: var(--gold);
+  background-color: var(--black);
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
 }
 .about-blurb {
-  background-color: var(--brown);
+  background-color: var(--red);
   color: white;
   max-width: 800px;
   padding: 2rem;
@@ -309,7 +316,7 @@ section {
   justify-content: center;
   padding-top: 15px;
   border-radius: 40px;
-  background-color:#32373B;
+  background-color: hsla(38 50% 99.1% / 0.6);
 }
 
 
@@ -319,17 +326,18 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: solid 3px var(--red);
 }
 
 .main-feedback {
   line-height: 36px;
   padding-top: 8px;
-  color:#F4B860;
+  color: var(--red)
 }
 
 .paragraph-text {
   line-height: 28px;
-  color:#F4D6CC
+  color: var(--black)
 }
 
 
